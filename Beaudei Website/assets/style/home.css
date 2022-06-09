@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Satisfy', cursive;
+}
+.jumbotron {
+  width: 100%;
+  background-image:url("../image/makeup-header.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center -100px;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+.jumbotron h1 {
+  font-size: 40px;
+  font-family: 'Montaga', serif;
+  text-align: center;
+
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  text-shadow: 0px 0px 40px white;
+}
+
+
+main {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+  background: white;
+}
+
+
+.best-seller-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.text-best-seller {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.text-best-seller h2, .text-recommendation h2{
+  text-align: center;
+}
+.best-seller, .recommendation {
+  flex: 2;
+}
+.recommendation-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.text-recommendation {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  order: 1;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.recommendation {
+  order: 2;
+
+}
+.best-seller,.recommendation  {
+  display: flex;
+  flex-direction: row;
+}
+.shop-makeup-skincare {
+  display: flex;
+  padding: 10px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.shop-makeup-skincare img {
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+}
+.goto-make-up , .goto-skincare{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+/* Benefit Start */
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f6f6f6;
+}
+.benefit-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  margin: 20px;
+}
+.benefit-child img{
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+}
+.benefit-text h3 {
+  margin-bottom: 10px;
+}
+.benefit-text {
+  display: flex;
+  flex-flow: column;
+}
+@media (max-width:1081px) {
+  .benefit-child {
+    flex-flow: column;
+  }
+  .benefit-text h3 {
+    text-align: center;
+  }
+  .benefit-text p {
+    text-align: center;
+  }
+}
+/* Benefit end */
+@media (max-width:997px) {
+  .best-seller-container , .shop-makeup-skincare{
+    flex-direction: column;
+  }
+}
+@media (max-width:909px){
+  .text-best-seller {
+    font-size: 25px;
+
+  }
+  .text-best-seller {
+    order: 1;
+  }
+  .best-seller {
+    order: 2;
+  }
+  .hidden {
+    display: none;
+  }
+  .benefit-text h3 {
+    font-size: 16px;
+  }
+  .benefit-text p {
+    display: 14px;
+  }
+
+}
+
+@media (max-width:516px){
+  .best-seller,.recommendation  {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .shop-makeup-skincare img {
+    width: 350px;
+    height: 170px;
+    border-radius: 10px;
+  }
+  .benefit {
+    flex-flow: column;
+    padding: 5px;
+    margin: 0;
+  }
+  .benefit-child img{
+    padding: 5px;
+  }
+}

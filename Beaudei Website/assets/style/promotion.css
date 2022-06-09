@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Satisfy', cursive;
+}
+main {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  max-width: 1200px;
+  margin: 30px auto;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+}
+.jumbotron {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.jumbotron img{
+  width: 100%;
+}
+.super-bundle{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  background-image: url('../image/background2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.left-super-bundle{
+  display: flex;
+  flex: 2;
+  padding: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+right-super-bundle {
+  flex: 1;
+}
+.right-super-bundle p.dashed{
+  text-decoration: line-through;
+}
+.right-super-bundle .text{
+ text-align: center;
+}
+.right-super-bundle .text h2{
+  font-size: 30px;
+  padding: 10px;
+ }
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40PX;
+  width: 250px;
+  height: 40px;
+  background-color: violet;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.4s;
+}
+.promotion-makeup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.promotion-makeup .image {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 15px;
+}
+.promotion-makeup .image img {
+  width: 100%;
+}
+.promotion-makeup .image .button{
+  padding: 5px;
+  margin: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+.title-makeup {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.title-makeup h2{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+/* Benefit Start */
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f6f6f6;
+}
+.benefit-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  margin: 20px;
+}
+.benefit-child img{
+  width: 130px;
+  height: 130px;
+  padding: 20px;
+}
+.benefit-text h3 {
+  margin-bottom: 10px;
+}
+.benefit-text {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (max-width:987px) {
+  .super-bundle{
+  flex-flow: column;
+  }
+
+}
+@media (max-width:675px) {
+  .left-super-bundle{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 7px
+    
+  }
+  .jumbotron {
+    padding-bottom: 10px;
+  }
+  .button{
+
+    margin: 7PX;
+
+  }
+  .promotion-makeup {
+    flex-flow: column;
+  }
+  .promotion-makeup .image {
+    width: 100%;
+    padding: 20px;
+  }
+
+
+}
+@media (max-width:1081px) {
+  .benefit-child {
+    flex-flow: column;
+  }
+  .benefit-text h3 {
+    text-align: center;
+  }
+  .benefit-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width:909px){
+  .benefit-text h3 {
+    font-size: 16px;
+  }
+  .benefit-text p {
+    display: 14px;
+  }
+
+}
+
+@media (max-width:516px){
+  .benefit {
+    flex-flow: column;
+    padding: 5px;
+    margin: 0;
+  }
+  .benefit-child img{
+    padding: 5px;
+  }
+
+}
+/* Benefit end */
